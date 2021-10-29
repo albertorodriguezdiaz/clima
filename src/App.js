@@ -20,7 +20,7 @@ function App() {
 
       useEffect(() => {
         const consultarAPI = async () => {
-          const appID = '3694a8bda0cb09f119a5d73df8141658';
+          const appID = 'token';
           const url = `http://api.openweathermap.org/data/2.5/weather?q=${ciudad},${pais}&appid=${appID}`;
 
           const respuesta = await fetch(url);
@@ -38,6 +38,7 @@ function App() {
 
         }
         consultarAPI();
+        
 // eslint-disable-next-line
       }, [consultar] );
 
